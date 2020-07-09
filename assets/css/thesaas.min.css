@@ -1,12 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Dosis:300,600");
+@import url(//db.onlinewebfonts.com/c/2a6c168c7d603dbbce4a785ed6a1f536?family=Noe+Display+Medium);
+@import url("../fonts/AdobeClean-Regular/style.css");
+@font-face {
+    font-family: "Noe Display Medium";
+    src: url("//db.onlinewebfonts.com/t/2a6c168c7d603dbbce4a785ed6a1f536.eot");
+    src: url("//db.onlinewebfonts.com/t/2a6c168c7d603dbbce4a785ed6a1f536.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2a6c168c7d603dbbce4a785ed6a1f536.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2a6c168c7d603dbbce4a785ed6a1f536.woff") format("woff"), url("//db.onlinewebfonts.com/t/2a6c168c7d603dbbce4a785ed6a1f536.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2a6c168c7d603dbbce4a785ed6a1f536.svg#Noe Display Medium") format("svg");
+}
+
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #535353;
-    font-weight: 300;
-    font-size: 0.9375rem;
-    line-height: 1.9;
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
     -webkit-transition: .5s;
     transition: .5s
+}
+
+p {
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
 }
 
 ::-moz-selection {
@@ -29,14 +41,15 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 400
 }
 
 a {
     color: #3ceb70;
     -webkit-transition: .2s linear;
-    transition: .2s linear
+    transition: .2s linear;
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 a:hover,
@@ -98,11 +111,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Dosis", "Open Sans", sans-serif;
-    font-weight: 600;
+    font-family: Noe Display Medium;
     color: #37404d;
-    letter-spacing: 1px;
-    line-height: 1.6
+    letter-spacing: normal;
+    line-height: 30px
 }
 
 h1 small,
@@ -179,14 +191,13 @@ h6 a:hover,
 
 h6,
 .h6 {
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 0;
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     font-weight: 400;
     font-size: 0.9375rem
 }
 
 .heading-alt {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     font-weight: 600;
     letter-spacing: 0
 }
@@ -204,7 +215,7 @@ h6,
     content: '“';
     display: block;
     font-size: 9rem;
-    font-family: Georgia, Verdana, Roboto, Serif;
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     line-height: .2;
     font-weight: 600;
     padding-top: 4rem;
@@ -330,8 +341,7 @@ pre {
 }
 
 .typed-cursor {
-    font-family: "Open Sans", sans-serif;
-    vertical-align: text-bottom;
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite
@@ -439,6 +449,37 @@ pre {
     }
     .blockquote footer {
         font-size: 0.75rem
+    }
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    font-size: .4rem;
+    padding: .25rem .25rem!important;
+    line-height: 1.5;
+    height: 3;
+}
+
+
+/* #media */
+
+@media (min-width: 768px) {
+    .carousel-item {
+        height: 100vh;
+    }
+    .carousel-caption {
+        top: 45%!important;
+    }
+    .topbar-right {
+        margin-right: 1.5rem!important;
+    }
+    .btn-group-sm>.btn,
+    .btn-sm {
+        font-size: .6rem;
+    }
+    .section-header {
+        text-align: center;
+        /* /* max-width: 70%; */
     }
 }
 
@@ -1112,7 +1153,7 @@ h1.card-title {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #fcfdfe;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     letter-spacing: 0
 }
 
@@ -1305,7 +1346,7 @@ h1.card-title {
 
 .btn {
     font-weight: 600;
-    font-size: 11px;
+    font-size: 0.8rem;
     padding: 7px 26px;
     line-height: inherit;
     color: #b5b9bf;
@@ -1422,8 +1463,8 @@ button:focus {
 
 .btn-success,
 .btn-success:hover {
-    background-color: #46da60;
-    border-color: #46da60;
+    background-color: #4B6DAC;
+    border-color: #4B6DAC;
     color: #fff
 }
 
@@ -1447,8 +1488,8 @@ button:focus {
 .btn-success:active,
 .btn-success.active,
 .show>.btn-success.dropdown-toggle {
-    background-color: #2dd54a;
-    border-color: #2dd54a;
+    background-color: #4B6DAC;
+    border-color: #4B6DAC;
     color: #fff
 }
 
@@ -1759,6 +1800,11 @@ button:focus {
     color: #46da60;
     background-color: transparent;
     border-color: #46da60
+}
+
+.btn-success {
+    background-color: #4B6DAC!important;
+    border-color: #4B6DAC!important;
 }
 
 .btn-success-outline:hover {
@@ -5923,11 +5969,11 @@ ul.flexbox {
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    padding: 160px 0 100px;
+    /* background-repeat: no-repeat; */
+    /* padding: 160px 0 100px; */
     z-index: 0;
     /* overflow: hidden; */
-    background-image: url('../../assets/img/bg.jpg');
+    /* background-image: url('../../assets/img/bg.jpg'); */
 }
 
 .header>.container,
@@ -6056,8 +6102,8 @@ ul.flexbox {
 }
 
 .section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     background-color: #fff;
     overflow-x: hidden
 }
@@ -6153,8 +6199,9 @@ ul.flexbox {
 
 .section-header {
     text-align: center;
-    max-width: 70%;
-    margin: 0 auto 0px
+    max-width: 100%;
+    margin: 0 auto 0px;
+    /* width: 100%!important; */
 }
 
 .section-header small {
@@ -6167,13 +6214,18 @@ ul.flexbox {
 }
 
 .section-header hr {
-    width: 50px;
-    margin-bottom: 1.5rem
+    width: 100px;
+    margin-bottom: 1.5rem;
+    color: #4B6DAC;
+}
+
+.card {
+    border: none!important;
 }
 
 @media (max-width: 991px) {
     .section-header {
-        max-width: 90%
+        /* max-width: 45% */
     }
 }
 
@@ -6300,7 +6352,7 @@ ul.flexbox {
 .site-footer {
     font-size: 0.75rem;
     border-top: 1px solid #f1f2f3;
-    padding: 30px 0
+    padding: 10px 0
 }
 
 .site-footer p {
@@ -9258,6 +9310,16 @@ a.text-danger:focus {
     font-family: "Dosis", "Open Sans", sans-serif
 }
 
+@media (max-width: 1024px) {
+    .hide p {
+        display: inline-block!important;
+    }
+}
+
+.btn .btn-lg .btn-round .btn-white .request:hover {
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+
 .fs-8 {
     font-size: 8px!important
 }
@@ -9287,11 +9349,11 @@ a.text-danger:focus {
 }
 
 .fs-15 {
-    font-size: 15px!important
+    font-size: 16px!important
 }
 
 .fs-16 {
-    font-size: 16px!important
+    font-size: 1.5rem!important
 }
 
 .fs-17 {
@@ -9299,7 +9361,8 @@ a.text-danger:focus {
 }
 
 .fs-18 {
-    font-size: 18px!important
+    font-size: 18px!important;
+    text-decoration: underline;
 }
 
 .fs-19 {
@@ -9307,7 +9370,7 @@ a.text-danger:focus {
 }
 
 .fs-20 {
-    font-size: 20px!important
+    font-size: 1.5rem!important
 }
 
 .fs-22 {
@@ -9559,7 +9622,7 @@ a.text-danger:focus {
 }
 
 .container .card:hover .face.face1 {
-    background: #3ceb70;
+    background: #4B6DAC;
     transform: translateY(0);
 }
 
@@ -9629,3 +9692,10 @@ a.text-danger:focus {
     background-repeat: no-repeat;
     background-image: url('../../assets/img/discover.jpg');
 }
+
+.w-100 {
+    height: 100vh;
+    width: auto!important;
+}
+
+.carousel-caption h5 {}
